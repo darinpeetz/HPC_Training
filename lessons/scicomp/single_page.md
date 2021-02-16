@@ -51,7 +51,7 @@ Let's imagine we are solving a problem of size **N** (that is, we have to make *
 
 -   **Strong scaling**<br>
     For tasks that require a lot of computational time (*i.e.* CPU-bound tasks), a better measure is the so-called **strong scaling**. It tells us how the solution time varies with the *number of processors* **P** for a fixed **total problem size** ***N***.
-    $$W\left(\rm N, P\right) = \dfrac{time\,(\rm N, 1)}{{\rm P} \cdot time\,(\rm N, P)}=\dfrac{S(\rm N, P)}{\rm P}$$
+    $$W\left(\rm N, P\right) = \dfrac{time\,(\rm N, 1)}{{\rm P}} \cdot time\,(\rm N, P)}=\dfrac{S(\rm N, P)}{\rm P}$$
     Usually, the goal is to find the optimum number of processing units that gives reasonable performance at an affordable computational cost.
 
 
