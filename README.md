@@ -7,50 +7,41 @@ This workshop series will introduce you to basic concepts in High-Performance Co
 
 Any Unix-based machine has everything we need for the workshop. If you plan to use your personal laptop that runs Windows, you should install a terminal emulator, such as [MobaXterm](http://mobaxterm.mobatek.net/).
 
+We plan to offer interactive seminars once per semester to go over all the materials laid out here. The materials are also designed so that you can work through them at your own pace if you prefer to work at your own pace.
 
 ### Topics
 
 #### Introduction to the Command Line
 
-**Feb. 16, 11:00 a.m.–1:00 p.m.**
-
-<p style="margin: 0px !important;">The <a href ="http://top500.org"><font style="font-weight: bold;">TOP500 Project</font></a>: The <a href ="http://top500.org/list/2016/11/"><font style="font-weight: bold;">list</font></a> of top 500 Supercomputers</p>
-<!-- <h3 style="border: 0px; padding: 0px;">Linux command line</h3> -->
 <p>
-<b>Lesson notes:</b> <a href="./lessons/bash/single_page.md"><font style="font-weight:bold;">Single page</font></a> or
-<a href="./lessons/bash/bash_multi.md">
+<b>Lesson notes:</b> <a href="./lessons/bash/single_page.html"><font style="font-weight:bold;">Single page</font></a> or
+<a href="./lessons/bash/bash_multi.html">
 	<font style="font-weight:bold;">Multi-page</font>
 </a>
 <br>
 Exercises:
-<a href="./lessons/bash/ex1.md"><font style="font-weight: bold;">#1</font></a>,
-<a href="./lessons/bash/ex2.md"><font style="font-weight: bold;">#2</font></a>,
-<a href="./lessons/bash/ex3.md"><font style="font-weight: bold;">#3</font></a>,
-<a href="./lessons/bash/ex4.md"><font style="font-weight: bold;">#4</font></a>,
-<a href="./lessons/bash/ex5.md"><font style="font-weight: bold;">#5</font></a>,
-<a href="./lessons/bash/ex6.md"><font style="font-weight: bold;">#6</font></a>
+<a href="./lessons/bash/ex1.html"><font style="font-weight: bold;">#1</font></a>,
+<a href="./lessons/bash/ex2.html"><font style="font-weight: bold;">#2</font></a>,
+<a href="./lessons/bash/ex3.html"><font style="font-weight: bold;">#3</font></a>,
+<a href="./lessons/bash/ex4.html"><font style="font-weight: bold;">#4</font></a>,
+<a href="./lessons/bash/ex5.html"><font style="font-weight: bold;">#5</font></a>,
+<a href="./lessons/bash/ex6.html"><font style="font-weight: bold;">#6</font></a>
 </p>
 
 
 #### Basics of Cluster Computing
 
-**Feb. 23, 11:00 a.m.–1:00 p.m.**
-
 Featuring Campus Cluster
 <br>
-<b>Lesson notes:</b> <a href="./lessons/scicomp/single_page.md"><font style="font-weight:bold;">Single page</font></a>
+<b>Lesson notes:</b> <a href="./lessons/scicomp/single_page.html"><font style="font-weight:bold;">Single page</font></a>
 
 #### Scientific Computing on a Cluster
 
-**Mar. 2, 11:00 a.m.–1:00 p.m.**
-
 Featuring Campus Cluster
 <br>
-<b>Lesson notes:</b> <a href="./lessons/cc/cc_main.md"><font style="font-weight:bold;">Single page</font></a>
+<b>Lesson notes:</b> <a href="./lessons/cc/cc_main.html"><font style="font-weight:bold;">Single page</font></a>
 
 #### Threaded Parallel Computing for Engineers
-
-**Mar. 9, 11:00 a.m.–1:00 p.m.**
 
 This lesson on OpenMP (and the next on MPI) are available in an ipython notebook.
 A static view of the notebook is also available:
@@ -69,8 +60,6 @@ brew install gcc --without-multilib
 ```
 
 #### Distributed Parallel Computing for Engineers
-
-**Mar. 16, 11:00 a.m.–1:00 p.m.**
 
 The [Message-Passing Interface](http://www.mcs.anl.gov/research/projects/mpi/) is the *de facto* standard for all large-scale distributed-memory cluster computing. We will examine the basics of this standard in C (and can touch on C++ and Fortran), as well as discuss some numerical coding applications and considerations. Programming experience with C or C++ is assumed.
 
