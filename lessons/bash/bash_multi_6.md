@@ -46,4 +46,3 @@ Another useful command is the `find` command. This command will isolate specific
 <td style=" border:0px solid black; text-align:center; font-size:20px;"><a style="text-decoration:none;" href="./bash_multi_5.html">⬅ Previous</a></td>
 <td style=" border:0px solid black; text-align:center; font-size:20px;"><a style="font-weight:bold;" href="./bash_multi_6.html">Finding Things</a></td>
 <td style=" border:0px solid black; text-align:center; font-size:20px;"><a style="text-decoration:none;" href="./bash_multi_7.html">Next ➡</a></td>
-</table>

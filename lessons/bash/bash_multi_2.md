@@ -89,4 +89,3 @@ A few handy shortcuts when moving around the file system:
 <td style=" border:0px solid black; text-align:center; font-size:20px;"><a style="text-decoration:none;" href="./bash_multi_1.html">⬅ Previous</a></td>
 <td style=" border:0px solid black; text-align:center; font-size:20px;"><a style="font-weight:bold;" href="./bash_multi_2.html">Files and Directories</a></td>
 <td style="border:0px solid black; text-align:center; font-size:20px;"><a style="text-decoration:none;" href="./bash_multi_3.html">Next ➡</a></td>
-</table>

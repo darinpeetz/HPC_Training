@@ -121,4 +121,3 @@ As a reminder if there is a command that you don't know exactly how to use or if
 <td style=" border:0px solid black; text-align:center; font-size:20px;"><a style="text-decoration:none;" href="./bash_multi_2.html">⬅ Previous</a></td>
 <td style=" border:0px solid black; text-align:center; font-size:20px;"><a style="font-weight:bold;" href="./bash_multi_3.html">Manipulating Files and Directories</a></td>
 <td style="border:0px solid black; text-align:center; font-size:20px;"><a style="text-decoration:none;" href="./bash_multi_4.html">Next ➡</a></td>
-</table>

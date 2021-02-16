@@ -29,7 +29,7 @@ Similarly, if we wanted to know who else was logged into the computer type `who`
 
 	$ date
 	Wed Dec 31 06:00:00 CST 1969
-	
+
 While this workshop will not cover every command the `man` will become your best friend. The `man` command prints to the screen the manual page for all other commands recognized by the shell. For example:
 
 	$ man mv
@@ -67,4 +67,3 @@ This command will help you later on when you want to figure out how to use a spe
 <td style=" border:0px solid black; text-align:center; font-size:20px;"><a style="text-decoration:none;" href="./bash_multi.html">⬅ Previous</a></td>
 <td style=" border:0px solid black; text-align:center; font-size:20px;"><a style="font-weight:bold;" href="./bash_multi_1.html">Introduction</a></td>
 <td style="border:0px solid black; text-align:center; font-size:20px;"><a style="text-decoration:none;" href="./bash_multi_2.html">Next ➡</a></td>
-</table>

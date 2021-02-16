@@ -48,4 +48,3 @@ Sometimes in order to combine two command line steps you can use a pipeline. Tha
 <td style=" border:0px solid black; text-align:center; font-size:20px;"><a style="text-decoration:none;" href="./bash_multi_3.html">⬅ Previous</a></td>
 <td style=" border:0px solid black; text-align:center; font-size:20px;"><a style="font-weight:bold;" href="./bash_multi_4.html">Pipes and Filters</a></td>
 <td style="border:0px solid black; text-align:center; font-size:20px;"><a style="text-decoration:none;" href="./bash_multi_5.html">Next ➡</a></td>
-</table>
