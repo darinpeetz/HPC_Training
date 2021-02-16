@@ -12,4 +12,3 @@
 <td style=" border:0px solid black; text-align:center; font-size:20px;"><a style="text-decoration:none;" href="./bash_multi_6.html">⬅ Previous</a></td>
 <td style=" border:0px solid black; text-align:center; font-size:20px;"><a style="font-weight:bold;" href="./bash_multi_7.html">Congratulations!</a></td>
 <td style=" border:0px solid black; text-align:center; font-size:20px; color: #888;">Next ➡</td>
-</table>
