@@ -4,9 +4,9 @@
 
 There will come a time when using bash that typing in specific commands in the command line will become cumbersome. This is where shell scripts come in. A user can write a series of commands in a shell script that the computer will then execute sequentially. It is important to know that commands that work on the command line will work the same way when implemented in a script. Likewise if a series of commands are implemented in a script, the same result will occur if the user inputs the commands manually in the command line. The following section will introduce the concept of shell scripts, how to write them, and how to execute them.
 
-Consider the following simple script:
+Consider the following simple script (found in the `bin` directory):
 
-	#!/bin/bash
+	#!/usr/local/bin/bash
 	echo This script lists the files in the directory
 	ls
 
@@ -24,7 +24,7 @@ In a shell script lines that start with `#` are considered comments and will not
 
 You can also declare variables within a shell script. This can be done in the following way:
 
-	#!/bin/bash
+	#!/usr/local/bin/bash
 	# Declare variable
 	str='Hello World!'
 	echo $str
@@ -52,7 +52,7 @@ There are a few automatically set variables when running a script. These are:
 
 As in any other programming language you can also implement `if`,`else`,`fi` statements, `for` loops, and `while` loops. For example you can write the following in a script:
 
-	#!/bin/bash
+	#!/usr/local/bin/bash
 	count=100
 	if [ $count -eq 100 ]
 	then
@@ -63,7 +63,7 @@ As in any other programming language you can also implement `if`,`else`,`fi` sta
 
 This script defines the variable `count` and executes the `echo` command if the variable `count` equals a certain value. Notice that the statement ends with `fi`. Sometimes it is useful to run a command until a certain requirement is met. For example, lets consider the following `while` loop:
 
-	#!/bin/bash
+	#!/usr/local/bin/bash
 	count=1
 	while(($n <= 5))
 	do
@@ -88,8 +88,8 @@ Take a look at the structure of the while loop. The basic structure of the while
 
 Similar to the `while` loop, the `for` loop will execute a command a command a number of times. However instead of executing the command until a condition is met a `for` loop will only execute the command for a pre-specified number of times. For example:
 
-	#!/bin/bash
-	for value in {1..5}
+	#!/usr/local/bin/bash
+	for n in {1..5}
 	do
 		echo "This loop has run $n times"
 	done	 
@@ -100,7 +100,7 @@ This loop will produce the exact same result as the `while` loop. However you ar
 
 More advanced loop could include the `break` and `continue` commands. The `break` command tells bash to exit the loop when a condition is met. The `continue` command tells bash to skip the current iteration and move on to the next iteration within the loop. For example:
 
-	#!/bin/bash
+	#!/usr/local/bin/bash
 	for value in {1..10}
 	do
 		if [ $value -eq 5 ]
@@ -118,7 +118,7 @@ More advanced loop could include the `break` and `continue` commands. The `break
 
 You can also prompt the user to select from a list of choices using the `select`,`do`,`done` sequence. For example the following script will prompt the user to run or quit:
 
-	#!/bin/bash
+	#!/usr/local/bin/bash
 	options='Continue Quit'
 	PS3='Choose 1) or 2) to Continue or Quit: '
 	select option in $options

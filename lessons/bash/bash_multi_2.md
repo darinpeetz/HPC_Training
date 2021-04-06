@@ -43,31 +43,33 @@ And then we can drill down all the way to something that perhaps looks more fami
 
 To navigate this system on the command line (as opposed to in a file browser), you only need a few basic commands: `pwd` ,`ls` ,`cd`.
 
-You already learned that `pwd` prints the working directory. To list the contents within a directory use the `ls` command. For example:
+You already learned that `pwd` prints the working directory. To list the contents within a directory use the `ls` command. For example, typing `ls` in the "root" directory:
 
 	$ ls
-	theme.mp3 boss.mp3
+	bin	data	home	usr
 
 Often a command will take options or flags which begin with `-`. Type `ls -l` to print a long list of the contents within a directory.
 
 	$ ls -l
 	total 2
-	drwx------. 2 LoginID ews 80 Aug 15 2015 boss.mp3
-	drwx------. 2 LoginID ews 80 Oct  6 2015 theme.mp3
+	drwxrwxr-x  2 peetz  wheel  2 Apr  6 09:56 bin
+	drwxrwxr-x  2 peetz  wheel  2 Apr  6 09:56 data
+	drwxrwxr-x  5 peetz  wheel  5 Apr  6 09:57 home
+	drwxrwxr-x  2 peetz  wheel  2 Apr  6 09:56 usr
+
 
 Other flags such as `-a`,`-t`, or `-r	` display the same contents with some modifications (Refer to the `man` pages for a full list of all the flags). The `-a` flag will display all files including the hidden files.
 
 	$ ls -a
-	.		boss.mp3		theme.mp3
-	.. 		.DS_Store
+	.	..	bin	data	home	usr
 
 To physically move from one directory to another you can use the `cd` command, as in **c**hange **d**irectory. This can be used in the following way:
 
-	$ cd sonic
+	$ cd home/sonic
 
 Notice that the current directory has changed. We can direct `cd` to a directory through an absolute path. For example:
 
-	$ cd /home/sonic/music
+	$ cd /home/$USER/sonic/music
 
 A few handy shortcuts when moving around the file system:
 

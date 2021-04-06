@@ -7,44 +7,46 @@ Over time you will start manipulating files and directories. This will include c
 The first basic command is `mkdir`. This command **m**a**k**es a **dir**ectory in the file system. Like many other commands there are multiple flags that can be used with this command, however the basic usage is `mkdir directory_name`. For example:
 
 	$ ls
-	bin data usr
-	$ mkdir home
+	boss.mp3	theme.mp3
+	$ mkdir lyrics
 	$ ls
-	bin data home usr
+	boss.mp3	lyrics	theme.mp3
 
 To **c**o**p**y a file or directory you can use the `cp` command. This second basic command allows the user to copy a file or directory and specify a destination. This command has the format `cp source destination`. For Example:
 
 	$ ls
-	bin data home usr
-	$ cp home thesis
-	bin data home thesis usr
+	boss.mp3	lyrics	theme.mp3
+	$ cp theme.mp3 menu.mp3
+	boss.mp3	lyrics	menu.mp3	theme.mp3
 
-The next basic command is `mv` which easily enough stands for **m**o**v**e. Similar to `cp` in this command you specify a source and a destination however unlike `cp` it will only keep the desitnation. For this reason `mv` is used to rename files. To move a file you can type the following in the command line:
+The next basic command is `mv` which easily enough stands for **m**o**v**e. Similar to `cp` in this command you specify a source and a destination however unlike `cp` it will only keep the destination. For this reason `mv` is used to rename files. To move a file you can type the following in the command line:
+
+	$ cd ..
+	$ ls
+	cse.txt	mend.cfg	music	papers	school	thesis
+	$ mv cse.txt school/
+	$ ls
+	mend.cfg	music	papers	school	thesis
+	$ cd school
+	$ ls
+	cs450.txt	cse.txt	ie340.txt
+
+Notice that the file `cse.txt` is no longer in the `sonic` directory but instead in the `school` directory. To rename a file you can specify the `source` as long as the source is not within the current directory. For example:
 
 	$ ls
-	bin data home thesis usr
-	$ mv thesis home/
+	cs450.txt	cse.txt	ie340.txt
+	$ mv cse.txt cse401.txt
 	$ ls
-	bin data home usr
-	$ cd home
-	$ ls
-	thesis
-
-Notice that the directory `thesis` is no longer in the root directory but instead in the home directory. To rename a file you can specify the `source` as long as the source is not within the current directory. For example:
-
-	$ ls
-	thesis
-	$ mv thesis paper
-	$ ls
-	paper
+	cs450.txt	cse401.txt	ie340.txt
 
 Finally there a few different ways to remove a file or directory. For example:
 
+	$ cd ..
 	$ ls
-	cse.txt mend.cfg music papers school thesis
+	mend.cfg	music	papers	school	thesis
 	$ rm mend.cfg
 	$ ls
-	cse.txt music papers school thesis
+	music	papers	school	thesis
 	$ rm thesis
 	rm: thesis: is a directory
 
@@ -52,30 +54,31 @@ You cannot simply remove a directory using the `rm` command. It turns out that t
 
 	$ rmdir thesis
 	$ ls
-	cse.txt music papers school
+	music	papers	school
 
-Another option is to use the flag `-r` which removes files from a directory recursively before removing the directory itself. For example:
+Another option is to use the flag `-d` or `-r` which attempts to remove directories as well as other file types. For example:
 
-	$ rm -d school
+	$ rm -d papers
 	$ ls
-	cse.txt music papers
+	music	school
 
-We now know how to copy, move, rename, and remove a file. But what about creating a new file? There are a few different ways you can create a new file. To create a blank file you can use the `touch` command. For example:
+We now know how copy, move, rename, and remove a file. But what about creating a new file? There are a few different ways you can create a new file. To create a blank file you can use the `touch` command. For example:
 
+	$ cd school
 	$ touch ae410.txt
 	$ ls
-	ae410.txt cse.txt music papers
+	ae410.txt	cs450.txt	cse401.txt	ie340.txt
 
 In some cases the `touch` command is used to update the timestamp on a file if the file already exists.
 
-To open a new file you can use a different editors. For example if I wanted to open a new file and begin editing it I could use the text editors `vi`, `vim`, or `nano` among others. In this case lets use `vi` to open a new file called `cse450.txt`:
+To open a new file you can use a different editors. For example if I wanted to open a new file and begin editing it I could use the text editors `vi`, `vim`, or `nano` among others. In this case lets use `nano` to open a new file called `me570.txt` (when done, press `ctrl`+`x` to close and save the file by following the prompts on the bottom of the screen):
 
-	$ vi cse450.txt
+	$ nano me570.txt
 
-The `cat`, `more`, and `less` commands allow you to view but not edit a file. For example if we want to view the file `cse450.txt` we can:
+The `cat`, `more`, and `less` commands allow you to view but not edit a file. For example if we want to view the file `me570.txt` we can:
 
 	$ cat cse450.txt
-	This is what is inside the cse450.txt file.
+	This is what is inside the me570.txt file.
 
 Lets say that there are a lot of files that you want to copy, move, rename, or remove. We can use what are called *Wildcards*.
 
@@ -83,31 +86,29 @@ Lets say that there are a lot of files that you want to copy, move, rename, or r
 - `?` - represents a single character
 - `[]` - represents a range of characters
 
-These commands allow the user to ask for a specific pattern or set of files and directories. For example lets say we have the following in our directory,
+These commands allow the user to ask for a specific pattern or set of files and directories. For example lets say we want to know what files we have that start with the letters `cs` we can use the `*` command.
 
+	$ ls cs*
+	cs450.txt	cse401.txt
+
+Let's say we create a directory to store old files, named `old`:
+
+	$ mkdir bold
 	$ ls
-	ae410.txt cse.txt dir5 dir37 dir40
-	file1.txt file2.txt music papers
-
-And we want to know what files we have that start with the letter `f` we can use the `*` command.
-
-	$ ls f*
-	file1.txt file2.txt
+	ae410.txt	cs450.txt	cse401.txt	ie340.txt	me570.txt	old
 
 If we cant to find all files that have exactly 3 characters as an extension we can use the `?` command:
 
 	$ ls *.???
-	ae410.txt cse.txt file1.txt file2.txt
+	ae410.txt	cs450.txt	cse401.txt	ie340.txt	me570.txt
 
 The last wildcard listed above is the `[]` command which can be used to specify a list of characters that you want to find. For example if you want to remove all files that start with the letter **a** and **c** you can type in the command line
 
 	$ ls
-	ae410.txt cse.txt dir5 dir37 dir40
-	file1.txt file2.txt music papers
+	ae410.txt	cs450.txt	cse401.txt	ie340.txt	me570.txt	old
 	$ rm [ac]*
 	$ ls
-	dir5 dir37 dir40 file1.txt
-	file2.txt music papers
+	ie340.txt	me570.txt	old
 
 As a reminder if there is a command that you don't know exactly how to use or if you want to find out what the flags are reference the `man` pages.
 

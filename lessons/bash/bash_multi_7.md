@@ -1,6 +1,6 @@
 [![](../../Banner.jpg)](http://uwm.edu/hpc/support)
 
-#Congratulations! Now you are a Linux-guru<sup>*</sup>!
+# Congratulations! Now you are a Linux-guru<sup>*</sup>!
 
 ![](./img/xkcd-cautionary.png)
 
