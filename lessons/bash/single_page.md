@@ -43,12 +43,12 @@ To print to the screen who the current user is type `whoami` and your LoginID sh
 	$ whoami
 	<LoginID>
 
-	Similarly, if we wanted to know who else was logged into the computer type `who` and a list of the users should print to the terminal. We could also use the `date` command to print the current date and time.
+Similarly, if we wanted to know who else was logged into the computer type `who` and a list of the users should print to the terminal. We could also use the `date` command to print the current date and time.
 
 		$ date
 		Wed Dec 31 06:00:00 CST 1969
 
-	While this workshop will not cover every command the `man` will become your best friend. The `man` command prints to the screen the manual page for all other commands recognized by the shell. For example:
+While this workshop will not cover every command the `man` will become your best friend. The `man` command prints to the screen the manual page for all other commands recognized by the shell. For example:
 
 	$ man mv
 
