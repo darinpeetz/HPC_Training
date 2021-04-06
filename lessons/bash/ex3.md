@@ -23,7 +23,7 @@ python plot-forecast.py < forecast.txt
 ```
 -->
 
-####Navigate to the `data/pipes` directory for the following exercises.
+#### Navigate to the `data/pipes` directory for the following exercises.
 
 -   If we run sort on the file `numbers.txt`, what is the output?  If we run
     `sort -n` on the same input, what do we get instead? why `-n`
