@@ -64,7 +64,7 @@ As in any other programming language you can also implement `if`,`else`,`fi` sta
 This script defines the variable `count` and executes the `echo` command if the variable `count` equals a certain value. Notice that the statement ends with `fi`. Sometimes it is useful to run a command until a certain requirement is met. For example, lets consider the following `while` loop:
 
 	#!/usr/local/bin/bash
-	count=1
+	n=1
 	while(($n <= 5))
 	do
 		echo "This loop has run $n times"

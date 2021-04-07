@@ -77,7 +77,7 @@ To open a new file you can use a different editors. For example if I wanted to o
 
 The `cat`, `more`, and `less` commands allow you to view but not edit a file. For example if we want to view the file `me570.txt` we can:
 
-	$ cat cse450.txt
+	$ cat me570.txt
 	This is what is inside the me570.txt file.
 
 Lets say that there are a lot of files that you want to copy, move, rename, or remove. We can use what are called *Wildcards*.
