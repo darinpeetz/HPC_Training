@@ -1,7 +1,6 @@
 [![](../../Banner.jpg)](http://uwm.edu/hpc/support)
 
 # Scientific Computing on a Cluster
-#### [CSE Training](cse.illinois.edu/training) • Spring 2016
 
 This workshop is intended to give you a whirlwind tour of the issues underlying scientific computing, particularly as that is executed today on distributed clusters.  What you should walk out of here with today is at least a list of topics to dig deeper into, because semester-long courses could be written with the outline we use to introduce scientific computing.
 
@@ -46,7 +45,7 @@ If you were plowing a field, which would you rather use: Two strong oxen or 1024
 Let's imagine we are solving a problem of size **N** (that is, we have to make **N** operations) and there is **P** processing elements (CPUs, cores, processes, threads, *etc.*) at our disposal. To execute code on a massively parallel machine, we have to be sure that our code effectively uses computer resourses (time- and energy-wise). We can measure how much faster the computer code that performs these operations is by calculating its speedup when we use more processing element:
 
 -   **Speedup**
-    $`S\left(\rm N, P\right) = \dfrac{time\,({\rm N, 1})}{time\,(\rm N, P)}`$
+    $$ S\left(\rm N, P\right) = \dfrac{time\,({\rm N, 1})}{time\,(\rm N, P)} $$
 
 
 -   **Strong scaling**<br>
@@ -344,4 +343,4 @@ source /class/cs101/etc/venv/cse/bin/activate /class/cs101/etc/venv/cse/
 jupyter notebook
 ```
 
-[![](https://bytebucket.org/davis68/resources/raw/f7c98d2b95e961fae257707e22a58fa1a2c36bec/logos/baseline_cse_wdmk.png?token=be4cc41d4b2afe594f5b1570a3c5aad96a65f0d6)](http://cse.illinois.edu/)
+[![](../../Banner.jpg)](http://uwm.edu/hpc/support)
