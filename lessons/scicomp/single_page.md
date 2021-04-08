@@ -46,7 +46,7 @@ If you were plowing a field, which would you rather use: Two strong oxen or 1024
 Let's imagine we are solving a problem of size **N** (that is, we have to make **N** operations) and there is **P** processing elements (CPUs, cores, processes, threads, *etc.*) at our disposal. To execute code on a massively parallel machine, we have to be sure that our code effectively uses computer resourses (time- and energy-wise). We can measure how much faster the computer code that performs these operations is by calculating its speedup when we use more processing element:
 
 -   **Speedup**
-    $$ S\left(\rm N, P\right) = \dfrac{time\,({\rm N, 1})}{time\,(\rm N, P)} $$
+    $`S\left(\rm N, P\right) = \dfrac{time\,({\rm N, 1})}{time\,(\rm N, P)}`$
 
 
 -   **Strong scaling**<br>
