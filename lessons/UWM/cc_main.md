@@ -117,6 +117,8 @@ We will use example codes obtained as follows to illustrate compiling, queueing,
 $ git clone https://github.com/darinpeetz/Submission_Example.git
 ```
 
+Remember that a cluster is usually divided between a small subset of "login" or "head" nodes, with a much larger pool of nodes available for computations. As is the case on many of these clusters, users of UWM resources are restricted from running most software on the login/head nodes. This is to keep users from overwhelming what are often slow/underpowered nodes. If you need interactive access to a program/service running on the cluster, use the `slurm-shell` command to get access to one of the compute nodes (similar commands are available on virtually every cluster).
+
 ### Queueing
 Fairshare queuing divides requested resources among system users or groups (rather than just between processes).  It incorporates the historic behavior of a user and group into job priority decision making.  In principle, this allows groups and users to fairly access the resource.  However, this can be frustrating for a new user to understand, particularly when one has a number of jobs in the queue and it takes a long time for them to run.
 
