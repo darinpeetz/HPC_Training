@@ -39,7 +39,7 @@ Featuring Campus Cluster
 
 Featuring Campus Cluster
 <br>
-<b>Lesson notes:</b> <a href="./lessons/cc/cc_main.html"><font style="font-weight:bold;">Single page</font></a>
+<b>Lesson notes:</b> <a href="./lessons/UWM/cc_main.html"><font style="font-weight:bold;">Single page</font></a>
 
 #### Threaded Parallel Computing for Engineers
 
