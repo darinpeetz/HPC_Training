@@ -129,7 +129,7 @@ Command       | Description
 sbatch        | submit batch job
 squeue        | query status of batch job
 scancel       | delete batch job
-scancel       | view accounting data for jobs
+sacct         | view accounting data for jobs
 
 ### Compiling
 If you're writing scientific code, you're almost definitely using C/C++, Fortran, Matlab, or Python, so it behooves us to check and see what the options for those are.
