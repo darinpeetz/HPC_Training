@@ -1,6 +1,6 @@
 # Exercises. Part 5
 -   Leah has several hundred data files, each of which is formatted like this:
-    
+
 ```
 2013-11-05,deer,5
 2013-11-05,rabbit,22
@@ -11,18 +11,18 @@
 2013-11-07,rabbit,18
 2013-11-07,bear,1
 ```
-    
+
 -   Write a shell script called `species.sh` that takes any number of
     filenames as command-line parameters, and uses `cut`, `sort`, and `uniq`
     to print a list of the unique species appearing in each of those files
-    separately.  (Test this on the files in `data/pipes/animals`)
+    separately.  (Test this on the files in `data/animals`)
 
--   Write a shell script called `longest.sh` that takes the name of a directory
+-   Write a shell script called `newest.sh` that takes the name of a directory
     and a filename extension as its parameters, and prints out the name of the
     most recently modified file in that directory with that extension. For example:
 
     ```
-    $ bash largest.sh /tmp/data pdb
+    $ bash newest.sh /tmp/data pdb
     ```
 
     would print the name of the `.pdb` file in `/tmp/data` that has been changed
@@ -38,7 +38,7 @@
 -   Joel's data directory contains three files: `fructose.dat`, `glucose.dat`,
     and `sucrose.dat`. Explain what the following script, `example.sh`, would
     do when run as `bash example.sh *.dat`:
-    
+
 ```
 	echo *.*
 	for filename in $1 $2 $3
@@ -50,7 +50,7 @@
 
 -   The `history` shows the last thousand or so commands that you've used.  What does this
     code do?  (Test `awk '{print $1}' data/pdb/methane.pdb` to see what this `awk` does.)
-    
+
 ```
     awk '{print $1}' ~/.bash_history | sort | uniq -c | sort -n | tail -10 | sort -n -r
 ```

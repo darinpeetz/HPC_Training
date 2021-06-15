@@ -238,7 +238,7 @@ These commands allow the user to ask for a specific pattern or set of files and 
 
 Let's say we create a directory to store old files, named `old`:
 
-	$ mkdir bold
+	$ mkdir old
 	$ ls
 	ae410.txt	cs450.txt	cse401.txt	ie340.txt	me570.txt	old
 
@@ -314,13 +314,13 @@ Sometimes in order to combine two command line steps you can use a pipeline. Tha
 
 There will come a time when using bash that typing in specific commands in the command line will become cumbersome. This is where shell scripts come in. A user can write a series of commands in a shell script that the computer will then execute sequentially. It is important to know that commands that work on the command line will work the same way when implemented in a script. Likewise if a series of commands are implemented in a script, the same result will occur if the user inputs the commands manually in the command line. The following section will introduce the concept of shell scripts, how to write them, and how to execute them.
 
-Consider the following simple script (found in the `bin` directory):
+Consider the following simple script (found in the `bin` directory, `list_directory.sh`):
 
 	#!/usr/local/bin/bash
 	echo This script lists the files in the directory
 	ls
 
-Lets break down the script and how its works. In the first line you'll see `#!/bin/bash` is written. Every shell script should start with this exact line, known as the shebang line. This line tells Linux which interpreter to use for this file. The second command is the `echo` command which prints everything that follows it. And finally we have the `ls` command which just lists the directory. If a user were to execute this series of command manually it would look like this:
+Lets break down the script and how its works. In the first line you'll see `#!/usr/local/bin/bash` is written. Every shell script should start with this line, known as the shebang line. This line tells Linux which interpreter to use for this file. The second command is the `echo` command which prints everything that follows it. And finally we have the `ls` command which just lists the directory. If a user were to execute this series of command manually it would look like this:
 
 	$ echo This script lists the files in the directory
 	This script lists the files in the directory
@@ -328,7 +328,7 @@ Lets break down the script and how its works. In the first line you'll see `#!/b
 	bin data home usr
 
 
-Remember that Linux is an extensionless system therefore when writing a shell script you don't have to append the `.sh` extension, however doing this will help you identify which files are shell scripts and which are not.
+Remember that Linux is an extensionless system, therefore when writing a shell script you don't have to append the `.sh` extension, however doing this will help you identify which files are shell scripts and which are not.
 
 In a shell script lines that start with `#` are considered comments and will not be interpreted. There are some exceptions however, including the first line of every script.
 
@@ -344,7 +344,7 @@ Notice that when we are defining the variable there are no spaces on either side
 	$ ./script.sh
 	Hello World!
 
-To run the shell script we typed `./` and then the filename. Remember a few sections back that `.` specifies the current directory. When executing a shell script you are essentially telling the computer that the script you are attempting to execute is in the current directory. An absolute path would also work. If the script in is the directory above your current directory you could use `../` to run the script.
+To run the shell script we typed `./` and then the filename. Remember a few sections back that `.` specifies the current directory. When executing a shell script you are essentially telling the computer that the script you are attempting to execute is in the current directory. An absolute path would also work. If the script is in the directory above your current directory you could use `../` to run the script.
 
 It may be the case that when you write a shell script your system does not yet know it's an executable script. To change this adjust the permissions on the file by typing:
 
@@ -408,7 +408,7 @@ This loop will produce the exact same result as the `while` loop. However you ar
 
 	names='Name1 Name2 Name3'
 
-More advanced loop could include the `break` and `continue` commands. The `break` command tells bash to exit the loop when a condition is met. The `continue` command tells bash to skip the current iteration and move on to the next iteration within the loop. For example:
+More advanced loops could include the `break` and `continue` commands. The `break` command tells bash to exit the loop when a condition is met. The `continue` command tells bash to skip the current iteration and move on to the next iteration within the loop. For example:
 
 	#!/usr/local/bin/bash
 	for value in {1..10}
@@ -483,6 +483,6 @@ Another useful command is the `find` command. This command will isolate specific
 
 ### Do [Exercise #6](./ex6.html)
 
-# Congratulations! Now you are a Linux-guru<sup>*</sup>!
+# Congratulations! You are now a Linux-guru<sup>*</sup>!
 
 ![](./img/xkcd-cautionary.png)
