@@ -3,7 +3,7 @@
 # Using UWM's HPC clusters
 
 
-[_The Mortimer Cluster_](login.mortimer.hpc.uwm.edu) is the primary campus-wide resource for high-performance computing located at the University of Wisconsin-Milwaukee, available to researchers.
+[_The Mortimer Cluster_](http://login.mortimer.hpc.uwm.edu) is the primary campus-wide resource for high-performance computing located at the University of Wisconsin-Milwaukee, available to researchers.
 
 ![](./img/cluster.svg)
 

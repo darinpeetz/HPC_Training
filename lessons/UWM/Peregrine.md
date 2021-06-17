@@ -3,7 +3,7 @@
 # Using UWM's HPC clusters
 
 
-[_The Peregrine Cluster_](login.peregrine.hpc.uwm.edu) is a small educational cluster for high-performance computing located at the University of Wisconsin-Milwaukee, available to students and researchers.
+[_The Peregrine Cluster_](http://login.peregrine.hpc.uwm.edu) is a small educational cluster for high-performance computing located at the University of Wisconsin-Milwaukee, available to students and researchers.
 
 ![](./img/cluster.svg)
 
