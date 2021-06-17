@@ -58,11 +58,11 @@ $ ssh crays@login.mortimer.hpc.uwm.edu
 crays@login.mortimer.hpc.uwm.edu's password:
 ```
 
-The machine will ask you for a password in response; enter the associated password and press `Return`. Additionally, sometimes the machine will ask you a question about [RSA security](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) which you can answer `yes` to; this should only happen once on a given machine.
+The machine will ask you for a password in response; enter the associated password (your AD password in this case) and press `Return`. Additionally, sometimes the machine will ask you a question about [RSA security](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) which you can answer `yes` to; this should only happen once on a given machine.
 
 You should now be logged in.  What this means is that commands you enter into this shell are interpreted not by your home machine, but by the remote cluster's login nodes.
 
-> If you are having difficulty with the password after a couple of tries, please contact [research-computing@uwm.edu](mailto:research-computing@uwm.edu). Note that after 3 failed login attempts, your IP address may be blocked from further login attempts as part of a security protocol. Contact [research-computing@uwm.edu](mailto:research-computing@uwm.edu) to have the block removed.
+> If you are having difficulty with the password after a couple of tries, please contact [research-computing@uwm.edu](mailto:research-computing@uwm.edu). Note that after repeated failed login attempts, your IP address may be blocked from further login attempts as part of a security protocol. Contact [research-computing@uwm.edu](mailto:research-computing@uwm.edu) to have the block removed.
 
 ### First Look Around
 
@@ -122,7 +122,7 @@ Remember that a cluster is usually divided between a small subset of "login" or 
 ### Queueing
 Fairshare queuing divides requested resources among system users or groups (rather than just between processes).  It incorporates the historic behavior of a user and group into job priority decision making.  In principle, this allows groups and users to fairly access the resource.  However, this can be frustrating for a new user to understand, particularly when one has a number of jobs in the queue and it takes a long time for them to run.
 
-The following command are the basic batch job commands to submit, check on, or delete a batch job on a Slurm system.
+The following command are the basic batch job commands to submit, check on, or delete a batch job on a Slurm system. These commands will typically be available on all nodes (i.e. you can submit jobs directly from the login job using sbatch).
 
 Command       | Description
 ------------- | -------------

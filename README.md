@@ -29,17 +29,15 @@ Exercises:
 </p>
 
 
-#### Basics of Cluster Computing
+#### Basics of Cluster Computing/Computing on Peregrine
 
-Featuring Campus Cluster
 <br>
-<b>Lesson notes:</b> <a href="./lessons/scicomp/single_page.html"><font style="font-weight:bold;">Single page</font></a>
+<b>Lesson notes:</b> <a href="./lessons/UWM/Peregrine.html"><font style="font-weight:bold;">Single page</font></a>
 
-#### Scientific Computing on a Cluster
+#### Scientific Computing on Mortimer
 
-Featuring Campus Cluster
 <br>
-<b>Lesson notes:</b> <a href="./lessons/UWM/cc_main.html"><font style="font-weight:bold;">Single page</font></a>
+<b>Lesson notes:</b> <a href="./lessons/UWM/Mortimer.html"><font style="font-weight:bold;">Single page</font></a>
 
 #### Threaded Parallel Computing for Engineers
 
